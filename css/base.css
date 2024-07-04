@@ -271,7 +271,7 @@ main {
 /* footerここから */
 footer {
 	margin-top: 50px;
-	background-color: #b9b9b9;
+	background-color: darkgray;
 	height: 100px;
 	display: flex;
 	justify-content: center;
