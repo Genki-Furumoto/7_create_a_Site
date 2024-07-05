@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+img {
+	border-style: none;
+	display: block;
+}
+
+hr {
+	display: none;
+}
+
+em {
+	font-style: normal
+}
+
+input {
+	line-height: auto;
+	vertical-align: middle;
+}
+
+strong.more {
+	color: #c30
+}
+
+a {
+	text-decoration: none;
+}
+
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* 以下、追加CSS */
+
+body {
+	background-color: #FFEFD5;
+}
+
+/* ナビゲーションバーここから */
+.navbar-brand {
+	font-size: 30px;
+	/* フォントサイズを大きくする */
+	font-weight: bold;
+	/* 太字にする */
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	padding: 0;
+
+}
+
+.nav-link {
+	font-size: 15px;
+	margin-right: 20px;
+}
+
+.custom-navbar {
+	background-color: lightgray;
+}
+
+.navbar-toggler {
+	width: 65px;
+	height: 50px;
+	margin: 0;
+}
+
+.btn-search {
+	color: black;
+	background-color: #f5f5f5;
+	border-color: #f0f0f0;
+	margin-left: 1px;
+	margin-right: 5px;
+}
+
+/* ナビゲーションバーここまで */
+
+/* Swiperここから */
+
+.swiper-wrapper {
+	/* wrapperのサイズを調整 */
+	width: 100%;
+	height: 600px;
+}
+
+.swiper-slide {
+	/* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 767px) {
+	.swiper-slide img {
+		padding: 15px 30px;
+	}
+
+	.info-section-title {
+		font-size: 30px !important;
+	}
+
+	.info-section-sentense {
+		font-size: 13px !important;
+	}
+
+	.locations {
+		display: none;
+	}
+
+	.highlight-item {
+		padding: 10px 15px 50px 15px !important;
+	}
+	
+}
+
+/* Swiperここまで */
+
+
+main {
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+
+/*  infoここから  */
+.info-title {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 15px;
+
+}
+
+.info-section-title {
+	font-size: 35px;
+	background-color: #FFC7AF;
+	cursor: pointer;
+}
+
+.info-section-sentense {
+    display: none;
+}
+
+.info-section-sentense li {
+	margin-bottom: 15px;
+}
+
+/*  infoここまで  */
+
+/* スクロールで表示する画像ここから */
+
+.highlight h2 {
+	padding-top: 50px;
+	padding-left: 50px;
+	font-size: 24px;
+}
+
+.highlight-item {
+	padding: 10px 40px 50px 40px;
+}
+
+.highlight-item p {
+	padding-top: 20px;
+}
+
+.hidden-area {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.show-hiddenArea {
+	opacity: 1;
+}
+
+/* スクロールで表示する画像ここまで */
+
+
+/* アドレス部ここから */
+.address {
+	background-color: black;
+	/* height: 390px; */
+}
+
+.address-sentense {
+	padding: 40px 20px 20px 20px;
+	color: white;
+	display: none;
+}
+
+.address-sentense p {
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.address-sentense-title {
+	margin-left: 5px;
+	font-size: 24px !important;
+}
+
+.address img {
+	padding: 20px 20px 20px 20px;
+}
+
+/* アドレス部ここまで */
+
+
+/* 店舗ここから */
+.locations h2{
+	margin-top: 25px;
+	text-align: center;
+	font-size: 25px;
+}
+.location-item img {
+	display: block;
+	width: 150px; /* 画像のサイズを調整 */
+	height: 150px; /* 画像のサイズを調整 */
+	border-radius: 50%; /* 画像を丸くする */
+	margin: 0 auto 10px; /* 画像を中央揃え、下に余白を追加 */
+}
+
+.locations p {
+	text-align: center;
+}
+/* 店舗ここまで */
+
+/* footerここから */
+footer {
+	margin-top: 50px;
+	background-color: darkgray;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+footer p {
+	margin-top: 20px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+/* footerここまで */
