@@ -159,6 +159,11 @@ body {
 	.locations {
 		display: none;
 	}
+
+	.highlight-item {
+		padding: 10px 15px 50px 15px !important;
+	}
+	
 }
 
 /* Swiperここまで */
@@ -183,7 +188,10 @@ main {
 	font-size: 35px;
 	background-color: #FFC7AF;
 	cursor: pointer;
+}
 
+.info-section-sentense {
+    display: none;
 }
 
 .info-section-sentense li {
@@ -201,7 +209,7 @@ main {
 }
 
 .highlight-item {
-	padding: 10px 50px 50px 50px;
+	padding: 10px 40px 50px 40px;
 }
 
 .highlight-item p {
@@ -229,6 +237,7 @@ main {
 .address-sentense {
 	padding: 40px 20px 20px 20px;
 	color: white;
+	display: none;
 }
 
 .address-sentense p {
